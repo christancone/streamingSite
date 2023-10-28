@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Hot Today </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+*{box-sizing:border-box;}
+body{
+	background-image:url(https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+	}
+#header{
+	background-image:url(header.jpg);
+	color:#290382;
+	text-align:center;
+}
+h1{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+	
+	
+}
+#navigation{
+	
+	padding:10px;
+	float:left;
+	width:20%;
+	height:100px;
+	color:#f2d480;
+	margin-bottom:20px;
+	position:fixed;
+	
+	
+
+}
+.menu li{
+	
+	background-image:url(menubg.jpg);
+	margin:20px;
+	border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+.menu li:hover{background-color: #320032;}
+a{
+	font-size:25px;
+	color:#f2d480;
+	font-weight:bold;
+	text-decoration: none;}
+#navigation li,a {
+	display: block;
+	position:relative;
+	transition: all 500ms;
+	}
+
+#navigation li a:hover {
+	color: #61ff35;
+	font-size:35px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+#navigation li:hover {
+	font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+	
+}
+th{
+    color: aquamarine;
+
+
+}
+table, th, td {
+    border:1px solid rgb(255, 255, 255);
+    color: azure;
+    text-align: center;}
+
+    th{
+        color: aquamarine;
+    
+    
+    }
+table{
+    
+    position: relative;
+    left:30%;
+    
+
+}
+table tr td img{
+    height:300px;
+    width: 250px;
+}
+#table{
+    width:60%;
+}
+@media screen and (max-width: 400px) {
+        #navigation{
+            width:120%;
+            float: right;
+            position: relative;
+            top:100%;
+            left: 20px;}
+        }
+        #tablemain{
+            width: 100%;
+            position: relative;
+            top: 200px;
+            right: 60px;
+        }
+</style>
+</head>
+
+<body>
+    <div id="header">
+    
+    <h1><a href="index.html"><img src="headerlogo.png"></a> </h1>
+    <p style="color:#05ff3f;font-size:20px;background-color:#c70670"><b> Relaxation is Essential </b></p>
+    </div>
+    
+    <div id="navigation" class="menu">
+    <ul>
+    <li><a href="chillax.html"> Home </a> </li>
+    <li> <a href="hottoday.html">Hot Today </a></li>
+    <li> <a href="#3">Book Now ! </a></li>
+    <li> <a href="signin.html">Sign In</a></li>
+    </ul> 
+    </div>
+  
+    <div id="tablemain" style="overflow-x:auto">
+    <table id="table">
+        <tr>
+          <th style="font-size:50px;">Number</th>
+          <th  style="width: 250px; font-size:40px; ">Movie</th>
+          <th style="font-size:40px;">Rating</th>
+          <th style="font-size:40px;">Collection</th>
+          
+        </tr>
+        <tr>
+            
+          <td style="font-size:100px;">1</td>
+          <td><img src="https://pbs.twimg.com/media/FdLlh6saEAAFBHL?format=jpg&name=small"></td>
+          <td><img src="5star.png" style="height: 200px;"></td>
+          <td>$ 125 Million</td>
+        </tr>
+        <tr>
+          <td style="font-size:100px;">2</td>
+          <td><img src="https://m.media-amazon.com/images/I/41kTVLeW1CL._AC_.jpg"></td>
+          <td><img src="5star.png" style="height: 200px;"></td>
+          <td>$ 2.922 billion</td>
+        </tr>
+        <tr><td style="font-size:100px;">3</td>
+            <td><img src="https://m.media-amazon.com/images/M/MV5BZDQyODUwM2MtNzA0YS00ZjdmLTgzMjItZWRjN2YyYWE5ZTNjXkEyXkFqcGdeQXVyMTI2MzY1MjM1._V1_.jpg"></td>
+            <td><img src="5star.png" style="height: 200px;"></td>
+            <td>$ 2.888 billion</td>
+
+        </tr>
+        <tr>
+            <td style="font-size:100px;">4</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAT4deET55wX0MzpBp45_7201ZndSAI8m2W52rNVeVmEbEgEW"></td>
+            <td><img src="4star.png" style="height: 75px;"></td>
+            <td>$ 1.922 billion</td>
+
+        </tr>
+        <tr>
+            <td style="font-size:100px;">5</td>
+            <td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmLUY5s6EEAHzEOQPF7Nv6tWElixl6kUmyvBPf7RezVPM3z_yd"></td>
+            <td><img src="4star.png" style="height: 75px;"></td>
+            <td>$ 1 billion</td>
+
+        </tr>
+      </table>
+    </div>
+
+</body>

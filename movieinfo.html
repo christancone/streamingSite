@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Ponniyin Selvan </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+*{box-sizing:border-box;}
+body{
+	background-image:url(https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+	}
+#header{
+	background-image:url(header.jpg);
+	color:#290382;
+	text-align:center;
+}
+h1{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+	
+	
+}
+#navigation{
+	
+	padding:10px;
+	float:left;
+	width:20%;
+	height:100px;
+	color:#f2d480;
+	margin-bottom:20px;
+	position:fixed;
+	
+	
+
+}
+.menu li{
+	
+	background-image:url(menubg.jpg);
+	margin:20px;
+	border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+.menu li:hover{background-color: #320032;}
+a{
+	font-size:25px;
+	color:#f2d480;
+	font-weight:bold;
+	text-decoration: none;}
+#navigation li,a {
+	display: block;
+	position:relative;
+	transition: all 500ms;
+	}
+
+#navigation li a:hover {
+	color: #61ff35;
+	font-size:35px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+#navigation li:hover {
+	font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+	
+}
+
+#moviename{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: azure;
+    position:relative;
+    left: 300px;
+    font-size:50px;
+    background-color: #5b5b5b;
+    width: fit-content;
+    border-radius: 10px;
+
+}
+#trailer{
+  color: antiquewhite;
+  font-family: fantasy;
+  position: relative;
+  left: 25%;
+  font-size: 50px;
+
+
+}
+#screenshots{
+  color: antiquewhite;
+  font-family: fantasy;
+  position: relative;
+  left: 25%;
+  font-size: 50px;
+
+
+}
+#ytplayer{
+    position: relative;
+    left:25%;
+
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(255, 208, 208);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    left: 43%;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+@media screen and (max-width: 400px) {
+        #navigation{
+            width:120%;
+            float: right;
+            position: relative;
+            top:100%;
+            left: 20px;}
+        #moviename{
+          left: 0px;
+        }#ytplayer{
+          width: 100%;
+          padding: 0px;
+          left: 0%;
+          
+        }
+        #content{
+          position: relative;
+          top: 300px;
+        }
+        .container {
+          position: relative;
+          width: 100%;
+          left: 0%;
+        }
+        
+
+        }
+        
+</style>
+</head>
+<body>
+    <div id=header>
+    
+    <h1><a href="index.html"><img src="headerlogo.png"></a> </h1>
+    <p style="color:#05ff3f;font-size:20px;background-color:#c70670"><b> Relaxation is Essential </b></p>
+    </div>
+    
+    <div id="navigation" class="menu">
+    <ul>
+    <li><a href="chillax.html"> Home </a> </li>
+    <li> <a href="hottoday.html">Hot Today </a></li>
+    <li> <a href="#3">Book Now ! </a></li>
+    <li> <a href="signin.html">Sign In</a> </li>
+    </ul> 
+    </div>
+
+<div id="content">
+<p id="moviename"> Ponniyin Selvan: Part 1</p>
+
+<p id="trailer">Movie Trailer </p>
+<div id="ytplayer"></div>
+<p id="screenshots">Movie Snaps </p>
+<h2 style="text-align:center;color: darkorchid;">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://variety.com/wp-content/uploads/2022/10/VT-02.jpeg?w=681&h=383&crop=1" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://variety.com/wp-content/uploads/2022/09/Ponniyin-Selvan-collage.jpg?w=681&h=383&crop=1" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://images.indianexpress.com/2022/09/A-screenshot-from-Sol-song-from-Ponniyin-Selvan.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://www.kerala9.com/wp-content/uploads/2022/09/ponniyin-selvan-jayaram-poster-1024x682.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://www.thenewsminute.com/sites/default/files/images/PonniyinSelvan_070922_YoutubeScreenshot_650_3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzr9cUAJjbpA7PPw8lE0nKOGY_sxrsjgAYzSfhqLhaH9Tum-_XcwrIn2kjvFQWXUSf2U57HUHVlhgC84DJbL5ki6qfVc4_NRSWJkYY1-tiFaV-YjdFNKCWKRfudJ6diUrv2bVGHiFtIC_OyZ3MCmL6L6K9VRgdNASNOaK4da9nIZYv6fDmTSEmdfrG/s1600/ponniyin-selvan-1-movie-pictures-05.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://variety.com/wp-content/uploads/2022/10/VT-02.jpeg?w=681&h=383&crop=1" style="width:100%" onclick="currentSlide(1)" alt="Vanthiyathevan VS Arulmozhi Varman">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://variety.com/wp-content/uploads/2022/09/Ponniyin-Selvan-collage.jpg?w=681&h=383&crop=1" style="width:100%" onclick="currentSlide(2)" alt="Karikaala Solan Entry">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images.hindustantimes.com/img/2022/10/03/1600x900/ponniyin_selvan_i_1664681692620_1664785212461_1664785212461.jpg" style="width:100%" onclick="currentSlide(3)" alt="Princess Kunthavai with her friend Vaanathi">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/25/2541332-trisha-final.jpg" style="width:100%" onclick="currentSlide(4)" alt="Vanthiyathevan with Aalvaarkadiyaal Nambi">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://static.joonsite.com/seelatest/2209121622526634.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://gumlet.assettype.com/freepressjournal/2022-10/0f6fc8e7-5261-4cd7-a49c-a5df8cb16696/cats.jpg?format=webp&w=480&dpr=2.6" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+</div>
+<button class="glow-on-hover" type="button">WATCH NOW ▶️</button>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '360',
+      width: '640',
+      videoId: 'BiKRcMQ4Nxg'
+    });
+  }
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+    
+</body>

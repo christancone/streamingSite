@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Sign in </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+*{box-sizing:border-box;}
+body{
+	background-image:url(https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+	}
+#header{
+	background-image:url(header.jpg);
+	color:#290382;
+	text-align:center;
+}
+h1{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+	
+	
+}
+#navigation{
+	
+	padding:10px;
+	float:left;
+	width:20%;
+	height:100px;
+	color:#f2d480;
+	margin-bottom:20px;
+	position:fixed;
+	
+	
+
+}
+.menu li{
+	
+	background-image:url(menubg.jpg);
+	margin:20px;
+	border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+.menu li:hover{background-color: #320032;}
+a{
+	font-size:25px;
+	color:#f2d480;
+	font-weight:bold;
+	text-decoration: none;}
+#navigation li,a {
+	display: block;
+	position:relative;
+    transition: all 500ms;
+	}
+
+#navigation li a:hover {
+	color: #61ff35;
+    font-size:35px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+#navigation li:hover {
+	font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+	
+}
+button{
+    border-radius: 5px;
+    background-color: #f486c3;
+}
+.forms1{
+    border-radius: 20px;
+				background-color: rgb(242, 242, 242,0.7);
+				padding: 20px;
+                margin: auto;
+                width: 50%;
+                position: relative;
+                float: right;
+                right: 200px;
+                top: 70px;
+
+            
+                
+				}
+                input[type=text],input[type=password] ,select {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;}
+.forms2{
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242,0.6);
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    float: right;
+    left: 550px;
+    top: 400px;
+    
+
+}
+    @media screen and (max-width: 400px) {
+        #navigation{
+            width:120%;
+            float: right;
+            position: relative;
+            top:100%;
+            left: 20px;
+        }
+        .forms1{
+            float: right;
+            left: 0%;
+            width: 100%;
+            top: 320px;
+            
+            float:none;
+            
+        }
+
+        .forms2{
+            float: none;
+            left: 0%;
+            width: 100%;
+            top: 350px;
+
+            
+
+        }
+
+
+    }                   
+                    
+				
+				
+
+
+
+</style>
+</head>
+
+<body>
+<div id=header>
+
+<h1><a href="index.html"><img src="headerlogo.png"></a> </h1>
+<p style="color:#05ff3f;font-size:20px;background-color:#c70670"><b> Relaxation is Essential </b></p>
+</div>
+<div id="navigation" class="menu">
+    <ul>
+    <li><a href="chillax.html"> Home </a> </li>
+    <li> <a href="hottoday.html">Hot Today </a></li>
+    <li> <a href="#3">Book Now ! </a></li>
+    <li> <a href="signin.html">Sign In</a> </li>
+    </ul> 
+    </div>
+<form class="forms1">
+    <fieldset>
+        <legend>Sign In</legend>
+        <label for="uname">Username</label>
+				<input type="text" id="uname" name="firstname" placeholder="Username/E-mail" required>
+		<label for="pw">Password</label>
+				<input type="password" id="pw" name="email" placeholder="Password" required>
+        <button type="submit"> Sign In</button>
+        <button type="reset"> Reset</button>
+
+    </fieldset>
+
+</form>
+
+<form class="forms2">
+    <fieldset>
+        <legend>Sign Up</legend>
+        <label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="First" required>
+		<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Last" required>
+        <label for="email">E-mail</label>
+		    <input type="text" id="email" name="email" placeholder="example@email.com" required>
+        <label for="pwnew">Create Password</label>
+            <input type="password" id="pwnew" name="newpw" placeholder="New Password" required>
+
+            <button type="submit"> Sign Up</button>
+            <button type="reset"> Reset</button>
+
+    </fieldset>
+
+</form>
+

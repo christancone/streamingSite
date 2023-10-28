@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Chillax </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+*{box-sizing:border-box;}
+body{
+	background-image:url(https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+	}
+#header{
+	background-image:url(header.jpg);
+	color:#290382;
+	text-align:center;
+}
+h1{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+	
+	
+}
+#navigation{
+	
+	padding:10px;
+	float:left;
+	width:20%;
+	height:100px;
+	color:#f2d480;
+	margin-bottom:20px;
+	position:fixed;
+	
+	
+
+}
+.menu li{
+	
+	background-image:url(menubg.jpg);
+	margin:20px;
+	border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+.menu li:hover{background-color: #320032;}
+a{
+	font-size:25px;
+	color:#f2d480;
+	font-weight:bold;
+	text-decoration: none;}
+#navigation li,a {
+	display: block;
+	position:relative;
+	transition: all 500ms;
+	}
+
+#navigation li a:hover {
+	color: #61ff35;
+	font-size:35px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+#navigation li:hover {
+	font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+	
+}
+
+
+#movieName {
+  height:40px;
+  width: 50%;
+  background-color: #fad2e8;
+  color: #08212e;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image:none;
+  font-size:30px;
+  position:relative;
+  left:600px;
+  }
+  
+ #submitButt{
+	height:40px;
+	border-radius: 10px;
+	position:relative;
+    left:600px;
+	bottom:5px;
+ }
+ #submitButt:hover {
+	background-color: #45a049;
+	}
+
+ .movieList{
+ position:relative;
+ left:300px;
+ width:80%;
+
+ 
+ 
+ }
+ .movieList img{
+ height:200px;
+ width:150px;
+ padding:10px;
+ }
+
+ .movieList figure{
+	float:left;
+	height:250px;
+	width:200px;
+	padding:10px;
+ }
+ img{
+	border-radius: 15%;
+ }
+ @media screen and (max-width: 400px) {
+        #navigation{
+            width:120%;
+            float: right;
+            position: relative;
+            top:100%;
+            left: 20px;}
+		.movieList{
+			left: 80px;
+			top: 190px;
+		}
+		#moviename{
+			left: 800px;
+			
+		}
+	}
+</style>
+</head>
+
+<body>
+<div id=header>
+
+<h1><a href="index.html"><img src="headerlogo.png"></a> </h1>
+<p style="color:#05ff3f;font-size:20px;background-color:#c70670"><b> Relaxation is Essential </b></p>
+</div>
+
+<div id="navigation" class="menu">
+<ul>
+<li><a href="#1"> Home </a> </li>
+<li> <a href="hottoday.html">Hot Today </a></li>
+<li> <a href="#3">Book Now ! </a></li>
+<li> <a href="signin.html">Sign In</a> </li>
+</ul> 
+</div>
+<br><br><br><br><br><br>
+
+    <input type="text" id="movieName" name="movieName" placeholder="Explore Your Blockbuster 🔍">
+	<input id="submitButt" type="submit" value="Search">
+	
+	
+<div class="movieList">
+	<figure>
+	<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjm1cCoyIUH9h4_LDDMTbnIKLaOYK8zRWgJraKXN5A9Bxguipw">
+	<figcaption><a href="movieinfo.html">Ponniyin Selvan (2022) </a></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvfCzr4MOD0Im6EE6DwwNAkUuNhQ7mY94kgIaS1mmXhWtHkEN">
+	<figcaption><a href="#2"> Luck (2022) </a></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO6DGIqeEH67Gs9GWiN-qXDo7pqrzY3fKz-5ElQ3zN9eUlY5Et">
+	<figcaption><a href="#3"> Slumberland (2022) </a></figcaption>
+	</figure>
+	
+	
+</div>
+<div class="movieList" style="float:none">
+	<figure>
+	<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr0UlXVhBk0UUKsuJOYa2kEwW6LO9Yz8q5At4EqMIDvHekbkng">
+	<figcaption><a href="#3"> The School for Good and Evil (2022) <a/></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwxRYxwsheC-nANognu6z9Va98XLoQLQ-xutuSAt713OufDyF">
+	<figcaption><a href="#3"> Carter (2022) </a></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6LbxemloEsyPQXRWvOUwj9fexSbztvNExqt38KoMZu5Bv2Zf7">
+	<figcaption><a href="#3">  Enola Holmes (2022) <a/></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArVI4ql8Ymg2Y8vpBb4y2znmu8YoBUKcTihKK8gAVubuSOTV2">
+	<figcaption><a href="#3"> Hey Sinamika (2022) <a/></figcaption>
+	</figure>
+	
+	<figure>
+	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQI5juUBWoWkUB2AjX2dAbW4Eu4hAz3YQbpXcv-CLLP5nx2ivyB">
+	<figcaption><a href="#3"> Darlings (2022) <a/></figcaption>
+	</figure>
+
+</div>
+
+ 
+ 
+
+
+
+</body>
+</html>
+
+
